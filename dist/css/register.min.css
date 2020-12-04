@@ -1,0 +1,459 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, hr, ul, ol, td, input, option, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "宋体";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-top: solid 2px #F5F5F5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer .wrapper .ind {
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.footer .wrapper .ind a {
+  color: #666;
+}
+
+.footer .wrapper .and {
+  color: #666;
+  font-size: 12px;
+}
+
+.header_wrap {
+  width: 100%;
+  border-bottom: solid 2px #F5F5F5;
+}
+
+.header_wrap header {
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header_wrap header .site_logo {
+  width: 240px;
+  height: 60px;
+  float: left;
+  margin-top: 15px;
+}
+
+.header_wrap header .nc_reg_now {
+  font-size: 14px;
+  color: #AAA;
+  line-height: 20px;
+  float: right;
+  width: 230px;
+  margin-top: 50px;
+}
+
+.header_wrap header .nc_reg_now .register {
+  font-weight: 600;
+  margin-left: 4px;
+  color: #06C;
+}
+
+.register_bg {
+  background: #FAFAFA url(../img/beijing.png) repeat 50% 50%;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+}
+
+.register_bg .register_box {
+  width: 820px;
+  height: 520px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 60px auto;
+  padding: 10px;
+}
+
+.register_bg .register_box .register_layout {
+  width: 820px;
+  height: 520px;
+  background-color: white;
+  border: solid 1px #CCC;
+  overflow: hidden;
+}
+
+.register_bg .register_box .register_layout .left {
+  width: 600px;
+  height: 520px;
+  float: left;
+}
+
+.register_bg .register_box .register_layout .left .tabs_nav {
+  border-bottom: solid 1px #E6E6E6;
+  height: 43px;
+  margin-left: 10px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_nav li {
+  width: 290px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+
+.register_bg .register_box .register_layout .left .tabs_nav li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #999;
+}
+
+.register_bg .register_box .register_layout .left .tabs_nav li .tabulous_active {
+  color: #C81623;
+  display: block;
+  border-bottom: 3px solid #C81623;
+}
+
+.register_bg .register_box .register_layout .left .tabs_nav li .tabulous_active span {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #C81623;
+  position: absolute;
+  left: 143px;
+  top: 43px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left {
+  position: relative;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode {
+  position: relative;
+  left: -600px;
+  width: 600px;
+  height: 520px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form {
+  position: absolute;
+  top: 45px;
+  left: 100px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form dl {
+  width: 400px;
+  border: solid 1px #E6E6E6;
+  height: 54px;
+  background-color: #FFF;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form dl dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 72px;
+  padding: 16px 0 16px 20px;
+  float: left;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form dl dd {
+  width: 290px;
+  height: 54px;
+  float: left;
+  line-height: 54px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form dl dd .text {
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  height: 28px;
+  line-height: 28px;
+  border: none;
+  color: #bbbbbb;
+  outline: none;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div dl {
+  width: 280px;
+  height: 54px;
+  float: left;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div dl dd {
+  width: 100px;
+  height: 25px;
+  float: left;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div dl dd .text_w {
+  width: 100px;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  height: 21px;
+  line-height: 21px;
+  border: none;
+  color: #bbbbbb;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div span {
+  display: block;
+  width: 122px;
+  height: 54px;
+  float: left;
+  position: relative;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div span #codeimage {
+  width: 120px;
+  height: 56px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .code_div span .makecode {
+  width: 120px;
+  height: 56px;
+  font-size: 14px;
+  color: white;
+  line-height: 56px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .tiptext {
+  color: #999;
+  font-size: 12px;
+  margin: 15px 0;
+  width: 400px;
+  height: 42px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .tiptext span a {
+  color: #FFF;
+  background-color: #21b384;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 8px;
+  margin: 0 4px;
+  border-radius: 2px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .note {
+  position: absolute;
+  top: 180px;
+  left: 0;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .submit_div {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_login_mode .nc_login_form .submit_div .submit {
+  width: 400px;
+  height: 42px;
+  font-family: "microsoft yahei";
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #C81623;
+  border: solid 1px #D91E17;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 520px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form {
+  position: absolute;
+  top: 45px;
+  left: 100px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form dl {
+  width: 400px;
+  border: solid 1px #E6E6E6;
+  height: 54px;
+  background-color: #FFF;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form dl dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 72px;
+  padding: 16px 0 16px 20px;
+  float: left;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form dl dd {
+  width: 290px;
+  height: 54px;
+  float: left;
+  line-height: 54px;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form dl dd .text {
+  width: 290px;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  line-height: 28px;
+  border: none;
+  outline: none;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form dl dd input-placeholder {
+  color: #bbbbbb;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form .clause-div {
+  width: 400px;
+  border: solid 0px #E6E6E6;
+  height: 54px;
+  background-color: #FFF;
+}
+
+.register_bg .register_box .register_layout .left .tabs_left .nc_reginster .reginster_form .submit_div .submit {
+  width: 400px;
+  height: 42px;
+  font-family: "microsoft yahei";
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #C81623;
+  border: solid 1px #D91E17;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.register_bg .register_box .register_layout .right {
+  width: 200px;
+  height: 500px;
+  float: right;
+  padding: 20px 0 0 19px;
+  border-left: solid 1px #E6E6E6;
+}
+
+.register_bg .register_box .register_layout .right .api_login {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: dashed 1px #E6E6E6;
+}
+
+.register_bg .register_box .register_layout .right .api_login h4 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register_bg .register_box .register_layout .right .api_login .wx {
+  display: block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 12px;
+}
+
+.register_bg .register_box .register_layout .right .api_login .wx i {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url(../img/login_pic.png) no-repeat -210px -32px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after h4 {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li {
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li i {
+  background: url(../img/login_pic.png) no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico01 {
+  background-position: 0px  -77px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico02 {
+  background-position: -30px  -77px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico03 {
+  background-position: -60px  -77px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico04 {
+  background-position: -90px  -77px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico05 {
+  background-position: -120px  -77px;
+}
+
+.register_bg .register_box .register_layout .right .reister_after ol li .ico06 {
+  background-position: -150px  -77px;
+}
