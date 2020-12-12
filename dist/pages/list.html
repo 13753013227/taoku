@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>淘库商城-列表页</title>
+    <link rel="stylesheet" href="../css/list.min.css">
+    <link rel="stylesheet" href="../lib/Pagination/css/jquery.pagination.css">
+</head>
+
+<body>
+    <div class="public_top">
+        <div class="topbar">
+            <div class="user_entry">
+                Hi，欢迎来&nbsp;
+                <a href="javascript:;" class="notice_top">&nbsp;淘库商城</a>
+                <a href="javascript:;" class="notice_top">&nbsp;请登录</a>
+                <a href="javascript:;" class="notice_top">&nbsp;免费注册</a>
+            </div>
+            <div class="quick_menu">
+                <dl>
+                    <dt>
+                        <em class="ico_1"></em>
+                        <a href="javascript:;" title="招商入驻">招商入驻</a>
+                        <i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li data-goods-id="sp1"><a href="javascript:;" title="招商入驻">招商入驻</a></li>
+                            <li data-goods-id="sp1"><a href="javascript:;" title="招商入驻">商家注册</a></li>
+                            <li><a href="javascript:;" title="招商入驻">商家登录</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_2"></em><a href="javascript:;">我的订单</a><i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">待付款订单</a>
+                            </li>
+                            <li><a href="javascript:;">待确认收货</a>
+                            </li>
+                            <li><a href="javascript:;">待评价交易</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_3"></em><a href="javascript:;">我的收藏</a><i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">商品收藏</a>
+                            </li>
+                            <li><a href="javascript:;">店铺收藏</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_4"></em>客户服务<i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">帮助中心</a>
+                            </li>
+                            <li><a href="javascript:;">售后服务</a>
+                            </li>
+                            <li><a href="javascript:;">客服中心</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_5"></em>站点导航<i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">首页</a></li>
+                            <li><a href="javascript:;">关于我们</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">加入我们</a> </li>
+                            <li><a href="javascript:;">商城公告</a></li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">店长之家</a></li>
+                            <li><a href="javascript:;">支付方式</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">客服中心</a></li>
+                            <li><a href="javascript:;">友情链接</a></li>
+                            <li><a href="javascript:;">招商入驻</a></li>
+                            <li><a href="javascript:;">我要开店</a></li>
+                            <li><a href="javascript:;">供应合作</a></li>
+                            <li><a href="javascript:;">服务站加盟</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="down_app">
+                    <dt>
+                        <em class="ico_6"></em><a href="javascript:;">手机移动</a><i></i>
+                    </dt>
+                    <dd>
+                        <div class="qrcode">
+                            <img src="https://www.taokubuy.com/data/upload/shop/common/mb_app.png">
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="weixin">
+                    <dt>
+                        关注我们<i></i>
+                    </dt>
+                    <dd>
+                        <img src="https://www.taokubuy.com/data/upload/shop/common/05930811665233424.png">
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="javascript:">
+                <img src="../img/logo.png" alt="">
+            </a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <ul class="tab">
+                <li class="current">
+                    <span>商品</span>
+                    <i class="arrow"></i>
+                </li>
+                <!-- <li class="current">
+                    <span>店铺</span>
+                </li> -->
+            </ul>
+            <form class="search_form" action="#">
+                <input type="text" placeholder="请输入您要搜索的商品关键字" class="input_text">
+                <input type="button" id="button" value="搜索" class="input_submit">
+            </form>
+            <div class="keyword">
+                热门搜索：
+            </div>
+        </div>
+        <!-- 我的商城 -->
+        <div class="head_user">
+            <dl class="my_mall">
+                <dt>
+                    <span class="ico"></span>
+                    我的商城
+                    <i class="arrow"></i>
+                </dt>
+                <dd>
+                    <div class="sub_title"></div>
+                </dd>
+            </dl>
+            <dl class="my_cart">
+                <a href="cart.html">
+                    <dt>
+                        <span class="ico"></span>
+                        购物车结算
+                        <i class="arrow"></i>
+                    </dt>
+                </a>
+                <dd>
+                    <div class="sub_title"></div>
+                </dd>
+            </dl>
+        </div>
+    </header>
+    <nav>
+        <div class="nav">
+            <div class="all_category">
+                <i></i>
+                <h3><a href="javascript:;">所有分类</a></h3>
+            </div>
+            <ul class="site_menu">
+                <li><a href="javascript:;">全球优选</a></li>
+                <li><a href="javascript:;">淘库好店</a></li>
+                <li><a href="javascript:;">淘库国际</a></li>
+                <li><a href="javascript:;">淘库特价</a></li>
+                <li><a href="javascript:;">全球优选</a></li>
+                <li><a href="javascript:;">兴农扶贫</a></li>
+                <li><a href="javascript:;">企业采购</a></li>
+                <li><a href="javascript:;">工厂直供</a></li>
+                <li><a href="javascript:;">我要开店</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nch">
+        <p>
+            <i></i>首页
+            <span></span>
+            淘库团购/食品生鲜
+        </p>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>分类筛选</h2>
+            <div class="title">
+                <h3>淘库团购/食品生鲜</h3>
+                <ul>
+                    <li><a href="javascript:">进口食品</a></li>
+                    <li><a href="javascript:">进口巧克力</a></li>
+                    <li><a href="javascript:">进口饮料</a></li>
+                    <li><a href="javascript:">进口牛奶</a></li>
+                    <li><a href="javascript:">进口酒</a></li>
+                    <li><a href="javascript:">家用电器</a></li>
+                    <li><a href="javascript:">家居生活</a></li>
+                    <li><a href="javascript:">生活数码</a></li>
+                    <li><a href="javascript:;">淘库好店</a></li>
+                    <li><a href="javascript:;">淘库国际</a></li>
+                    <li><a href="javascript:;">淘库特价</a></li>
+                    <li><a href="javascript:;">全球优选</a></li>
+                    <li><a href="javascript:;">兴农扶贫</a></li>
+                    <li><a href="javascript:;">企业采购</a></li>
+                    <li><a href="javascript:;">工厂直供</a></li>
+                    <li><a href="javascript:;">我要开店</a></li>
+                    <li><a href="javascript:;">淘库好店</a></li>
+                    <li><a href="javascript:;">淘库国际</a></li>
+                    <li><a href="javascript:;">淘库特价</a></li>
+                </ul>
+                <div class="img">
+                    <a href="javascrippt:;">
+                        <img src="../img/list1.png" alt="">
+                    </a>
+                </div>
+                <div class="history">
+                    <h4>最近浏览</h4>
+                    <a href="javascript:;">
+                        <p>全部浏览历史</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <!-- 加入购物车提示框 -->
+            <div class="go-cart">
+                <i>√</i><em>加入购物车成功</em>
+                <div class="close">关闭</div>
+                <span>
+                    <a href="cart.html">进入购物车</a>
+                </span>
+            </div>  
+            <h2>热门推荐</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                        <div class="goods_img">
+                            <a href="details.html">
+                                <img src="../img/lis11.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="goods_price">
+                            <p>法国波尔2015干红葡萄酒 单只 全国</p>
+                            <span>商城价:<i>￥999.99</i></span>
+                            <em>立即抢购</em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_img">
+                            <a href="javascript:;">
+                                <img src="../img/lis1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="goods_price">
+                            <p>法国波尔2015干红葡萄酒 单只 全国</p>
+                            <span>商城价:<i>￥999.99</i></span>
+                            <em>立即抢购</em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_img">
+                            <a href="javascript:;">
+                                <img src="../img/lis2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="goods_price">
+                            <p>法国波尔2015干红葡萄酒 单只 全国</p>
+                            <span>商城价:<i>￥999.99</i></span>
+                            <em>立即抢购</em>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods_img">
+                            <a href="javascript:;">
+                                <img src="../img/lis3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="goods_price">
+                            <p>法国波尔2015干红葡萄酒 单只 全国</p>
+                            <span>商城价:<i>￥999.99</i></span>
+                            <em>立即抢购</em>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="select-2">
+                <div class="screen-btns">
+                    <a href="javaScript:;"><i>默认</i></a>
+                    <a href="javaScript:;"><i>价格</i></a>
+                    <a href="javaScript:;"><i>销量</i></a>
+                    <span>排序：</span>
+                    <select name="" id="">
+                        <option value="">默认</option>
+                        <option value="">按价格 从高到低</option>
+                        <option value="">按价格 从低到高</option>
+                        <option value="">访问周次数</option>
+                        <option value="">总访问次数</option>
+                        <option value="">周购买次数</option>
+                        <option value="">总购买次数</option>
+                    </select>
+                    <div class="big-img">
+                        <span>大图</span>
+                    </div>
+                    <div class="lists">
+                        <span>列表</span>
+                    </div>
+                </div>
+                <div class="screen">
+                    <span>筛选：</span>
+                    <input type="checkbox" name="" id="">人气热销
+                    <input type="checkbox" name="" id="">本季新品
+                    <input type="checkbox" name="" id="">送赠品
+                    <input type="checkbox" name="" id="">流行热卖
+                    <input type="checkbox" name="" id="">新品
+                </div>
+            </div>
+            <div class="list_pic">
+                <ul>
+                    <li data-goods-id="sp1">
+                        <a href="details.html"><img src="../img/lis1.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp2">
+                        <a href="details.html"><img src="../img/lis2.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp3">
+                        <a href="details.html"><img src="../img/lis3.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp4">
+                        <a href="details.html"><img src="../img/lis4.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp5">
+                        <a href="javaScript:;"><img src="../img/lis11.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp6">
+                        <a href="javaScript:;"><img src="../img/lis1.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp7">
+                        <a href="javaScript:;"><img src="../img/lis2.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp8">
+                        <a href="javaScript:;"><img src="../img/lis3.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp9">
+                        <a href="javaScript:;"><img src="../img/lis4.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp10">
+                        <a href="javaScript:;"><img src="../img/lis11.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp11">
+                        <a href="javaScript:;"><img src="../img/lis2.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                    <li data-goods-id="sp12">
+                        <a href="javaScript:;"><img src="../img/lis3.jpg" alt=""></a>
+                        <a href="javaScript:;">
+                            <p>莱蔻玫瑰混酿红葡萄酒(红玫瑰) 单只 750ml</p>
+                        </a>
+                        <i>￥999.99</i>
+                        <div class="goods-buy">
+                            <a href="javascript:;" class="red">-</a>
+                            <input type="text" value="1" class="inp">
+                            <a href="javascript:;" class="add">+</a>
+                            <span>加入购物车</span>
+                        </div>
+                        <div class="tow-btn">
+                            <span>收藏</span>
+                            <span>对比</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div id="pagination1" class="page fl"></div>
+                <div class="info fl"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="wrapper">
+            <p class="ind">
+                <a href="javascript:;">首页</a>
+                | <a href="javascript:;">关于我们</a>
+                | <a href="javascript:;">联系我们</a>
+                | <a href="javascript:;">加入我们</a>
+                | <a href="javascript:;">商城公告</a>
+                | <a href="javascript:;">帮助中心</a>
+                | <a href="javascript:;">店主之家</a>
+                | <a href="javascript:;">支付方式</a>
+                | <a href="javascript:;">售后服务</a>
+                | <a href="javascript:;">客服中心</a>
+                | <a href="javascript:;">友情链接</a>
+                | <a href="javascript:;">招商入驻</a>
+                | <a href="javascript:;">我要开店</a>
+                | <a href="javascript:;">供应合作</a>
+                | <a href="javascript:;">服务站加盟</a>
+            </p>
+            <p class="and"> 淘库商城股份有限公司 及／或其关联公司及特许人。 版权所有。
+                <a href="javascript:">| 闽ICP备17020735号 | <img src="../img/110.png" alt="">闽公网安备 35020302028562号</a>
+            </p>
+            <span>
+                <a href="javascript:"><img src="../img/1.png" alt=""></a>
+                <a href="javascript:"><img src="../img/2.png" alt=""></a>
+                <a href="javascript:"><img src="../img/3.png" alt=""></a>
+                <a href="javascript:"><img src="../img/4.png" alt=""></a>
+            </span>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.min.min.js"></script>
+    <script src="../lib/Pagination/js/jquery.pagination.min.js"></script>
+    <script src="../js/list.min.js"></script>
+</body>
+
+</html>

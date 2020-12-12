@@ -53,7 +53,10 @@ function fnHtml(){
     .pipe(html())
     .pipe(gulp.dest('./dist/pages'));
 }
-
+function fnLib(){
+    return gulp.src('./src/lib/**/*')
+    .pipe(gulp.dest('./dist/lib'));
+}
 //监听任务
 function fnWatch(){
     gulp.watch('./src/index.html',fnCopyIndex);
@@ -61,6 +64,7 @@ function fnWatch(){
     gulp.watch('./src/js/*.js',fnJs);
     gulp.watch('./src/pages/*.html',fnHtml);
     gulp.watch('./src/img/*',fnImg);
+    gulp.watch('./src/lib/**/*',fnLib);
 }
 //3.导出模块
 exports.copyIndex = fnCopyIndex;
@@ -68,4 +72,5 @@ exports.css = fnCss;
 exports.js = fnJs;
 exports.img = fnImg;
 exports.html = fnHtml;
+exports.lib = fnLib;
 exports.default = fnWatch;

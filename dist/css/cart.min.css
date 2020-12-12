@@ -1,0 +1,490 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, hr, ul, ol, td, input, option, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "宋体";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-top: solid 2px #F5F5F5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer .wrapper .ind {
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.footer .wrapper .ind a {
+  color: #666;
+}
+
+.footer .wrapper .and {
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .wrapper .and a {
+  color: #666;
+  font-size: 12px;
+}
+
+/* <!-- header --> */
+.public_top {
+  width: 100%;
+  font-family: Arial, "宋体";
+  line-height: 20px;
+  color: #777;
+  background-color: #FAFAFA;
+  border-bottom: solid 1px #F0F0F0;
+}
+
+.public_top .topbar {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.public_top .topbar .user_entry {
+  width: 40%;
+  height: 20px;
+  float: left;
+  padding: 5px 0;
+}
+
+.public_top .topbar .user_entry a {
+  color: #777;
+}
+
+.public_top .topbar .quick_menu {
+  width: 60%;
+  height: 30px;
+  float: right;
+}
+
+.public_top .topbar .quick_menu dl:hover dd {
+  display: block;
+}
+
+.public_top .topbar .quick_menu dl {
+  width: 90px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.public_top .topbar .quick_menu dl dt em {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: url(../img/top_ico.png) no-repeat;
+  transition: all .2s;
+}
+
+.public_top .topbar .quick_menu dl dt a {
+  color: #777;
+}
+
+.public_top .topbar .quick_menu dl dt i {
+  background: url(../img/top_bg.png) no-repeat 0px 0px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 6px;
+  height: 3px;
+  margin-left: 6px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_1 {
+  background-position: -14px -12px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_2 {
+  background-position: -29px -12px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_3 {
+  background-position: -44px -12px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_4 {
+  background-position: -59px -12px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_5 {
+  background-position: -29px -12px;
+}
+
+.public_top .topbar .quick_menu dl dt .ico_6 {
+  background-position: 0px -12px;
+}
+
+.public_top .topbar .quick_menu dl dd {
+  background-color: #FFF;
+  display: none;
+  width: 92px;
+  height: 100px;
+  border: solid 1px #F0F0F0;
+  position: absolute;
+  top: 30px;
+  left: -11px;
+  z-index: 100;
+}
+
+.public_top .topbar .quick_menu dl dd ul li {
+  background-color: white;
+}
+
+.public_top .topbar .quick_menu dl dd ul li a {
+  color: #777;
+  display: block;
+  line-height: 24px;
+  padding: 2px 0 2px 11px;
+}
+
+header {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 240px;
+  height: 60px;
+  margin-top: 30px;
+  float: left;
+}
+
+header .flow {
+  width: 640px;
+  height: 70px;
+  float: right;
+  margin: 15px 0;
+}
+
+header .flow .current .hr {
+  background-color: #27A9E3;
+}
+
+header .flow .current span {
+  background-color: #27A9E3;
+}
+
+header .flow .current p {
+  color: #27A9E3;
+}
+
+header .flow li {
+  position: relative;
+  width: 25%;
+  height: 70px;
+  float: left;
+}
+
+header .flow li .hr {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  background-color: #DDD;
+  width: 100%;
+  height: 1px;
+  border: none 0;
+}
+
+header .flow li span {
+  position: absolute;
+  left: 75px;
+  top: 32px;
+  display: inline-block;
+  background-color: #FFF;
+  width: 5px;
+  height: 5px;
+  border: solid 1px #CCC;
+  border-radius: 4px;
+}
+
+header .flow li p {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  color: #CCC;
+  text-align: center;
+  width: 100%;
+  height: 24px;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main .title {
+  height: 50px;
+  padding: 15px 0;
+  border: solid #F7F7F7;
+  border-width: 1px 0 0;
+}
+
+.main .title h3 {
+  font: lighter 24px/30px arial,"microsoft yahei";
+  color: #555;
+}
+
+.main .title h5 {
+  font: 12px/20px arial,"microsoft yahei";
+  color: #AAA;
+}
+
+.main h3 {
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  padding: 0 10px;
+}
+
+.main .buy-goods {
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 13px;
+  color: #666666;
+  background: #fff;
+}
+
+.main .buy-goods thead th {
+  font-size: 14px;
+  font-weight: normal;
+  height: 36px;
+  width: 100px;
+  background: #EFEFEF;
+}
+
+.main .buy-goods tbody {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.main .buy-goods tbody td {
+  padding: 15px 0 8px 0;
+  background-color: #FFFDEE;
+}
+
+.main .buy-goods tbody td img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #E6E6E6;
+}
+
+.main .buy-goods tbody .good-pic {
+  width: 100px;
+}
+
+.main .buy-goods tbody .good-pic img {
+  margin-left: 8px;
+}
+
+.main .buy-goods tbody .good-txt {
+  text-align: left;
+  line-height: 80px;
+}
+
+.main .buy-goods tbody .good-txt a {
+  color: #666666;
+}
+
+.main .buy-goods tbody .good-txt a:hover {
+  color: #026EB7;
+  text-decoration: underline;
+}
+
+.main .buy-goods tbody .good-num {
+  width: 78px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main .buy-goods tbody .good-num a {
+  float: left;
+  width: 22px;
+  height: 23px;
+  border: 1px solid #A9A9A9;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: simsun, serif;
+  color: #666666;
+}
+
+.main .buy-goods tbody .good-num a:hover {
+  background: #666666;
+  color: #fff;
+}
+
+.main .buy-goods tbody .good-num .inp {
+  float: left;
+  width: 30px;
+  height: 23px;
+  border: 0;
+  border-top: 1px solid #A9A9A9;
+  border-bottom: 1px solid #A9A9A9;
+  text-align: center;
+}
+
+.main .buy-goods tbody .good-total-price {
+  color: #FE2000;
+}
+
+.main .buy-goods tbody .operate a {
+  color: #026EB7;
+  margin: 0 8px;
+}
+
+.main .buy-goods tfoot {
+  background: #EFEFEF;
+}
+
+.main .buy-goods tfoot .count {
+  width: 355px;
+  padding: 15px 0px 10px 45px;
+}
+
+.main .buy-goods tfoot .count p {
+  float: left;
+  width: 205px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #666666;
+  text-align: right;
+}
+
+.main .buy-goods tfoot .count p b {
+  font-weight: bold;
+}
+
+.main .buy-goods tfoot .count i {
+  float: left;
+  width: 155px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FE2000;
+  text-align: left;
+}
+
+.main .buy-goods tfoot .count em {
+  float: left;
+  width: 155px;
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FE2000;
+  text-align: left;
+}
+
+.main .buy-goods tfoot .btn {
+  background-color: white;
+  font-size: 12px;
+}
+
+.main .buy-goods tfoot .btn td {
+  padding: 30px 0px;
+}
+
+.main .buy-goods tfoot .btn .btn-lt span {
+  float: left;
+  cursor: pointer;
+}
+
+.main .buy-goods tfoot .btn .btn-lt span:first-child {
+  padding: 0 10px;
+  color: #666666;
+  border: 1px solid #A9A9A9;
+  height: 22px;
+  line-height: 22px;
+  background: #fff;
+  margin-right: 10px;
+}
+
+.main .buy-goods tfoot .btn .btn-lt span:first-child:hover {
+  color: #ffffff;
+  background: #666666;
+}
+
+.main .buy-goods tfoot .btn .btn-lt span:last-child {
+  color: #fff;
+  padding: 0 15px;
+  height: 24px;
+  line-height: 24px;
+  background-image: linear-gradient(#f89416, #f49012);
+}
+
+.main .buy-goods tfoot .btn .btn-lt span:last-child:hover {
+  background-image: linear-gradient(#da7d0c, #cd750a);
+}
+
+.main .buy-goods tfoot .btn .btn-rt {
+  padding-left: 180px;
+}
+
+.main .buy-goods tfoot .btn .btn-rt a {
+  float: left;
+}
+
+.main .buy-goods tfoot .btn .btn-rt .a-1 {
+  line-height: 42px;
+  color: #666666;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.main .buy-goods tfoot .btn .btn-rt .a-2 {
+  width: 212px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #49AFCD;
+  border-color: #429DB8 #429DB8 #37839A #429DB8;
+}
+
+.main .buy-goods tfoot .btn .btn-rt .a-2:hover {
+  background-image: linear-gradient(#ff242f, #da1922);
+}

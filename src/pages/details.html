@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘库商城-详情页</title>
+    <link rel="stylesheet" href="../css/details.min.css">
+    <link rel="stylesheet" href="../lib/jQueryMagnifier/css/magnifier.css">
+</head>
+
+<body>
+    <div class="public_top">
+        <div class="topbar">
+            <div class="user_entry">
+                Hi，欢迎来&nbsp;
+                <a href="javascript:;" class="notice_top">&nbsp;淘库商城</a>
+                <a href="javascript:;" class="notice_top">&nbsp;请登录</a>
+                <a href="javascript:;" class="notice_top">&nbsp;免费注册</a>
+            </div>
+            <div class="quick_menu">
+                <dl>
+                    <dt>
+                        <em class="ico_1"></em>
+                        <a href="javascript:;" title="招商入驻">招商入驻</a>
+                        <i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;" title="招商入驻">招商入驻</a></li>
+                            <li><a href="javascript:;" title="招商入驻">商家注册</a></li>
+                            <li><a href="javascript:;" title="招商入驻">商家登录</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_2"></em><a href="javascript:;">我的订单</a><i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">待付款订单</a>
+                            </li>
+                            <li><a href="javascript:;">待确认收货</a>
+                            </li>
+                            <li><a href="javascript:;">待评价交易</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_3"></em><a href="javascript:;">我的收藏</a><i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">商品收藏</a>
+                            </li>
+                            <li><a href="javascript:;">店铺收藏</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_4"></em>客户服务<i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">帮助中心</a>
+                            </li>
+                            <li><a href="javascript:;">售后服务</a>
+                            </li>
+                            <li><a href="javascript:;">客服中心</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <em class="ico_5"></em>站点导航<i></i>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:;">首页</a></li>
+                            <li><a href="javascript:;">关于我们</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">加入我们</a> </li>
+                            <li><a href="javascript:;">商城公告</a></li>
+                            <li><a href="javascript:;">帮助中心</a></li>
+                            <li><a href="javascript:;">店长之家</a></li>
+                            <li><a href="javascript:;">支付方式</a></li>
+                            <li><a href="javascript:;">售后服务</a></li>
+                            <li><a href="javascript:;">客服中心</a></li>
+                            <li><a href="javascript:;">友情链接</a></li>
+                            <li><a href="javascript:;">招商入驻</a></li>
+                            <li><a href="javascript:;">我要开店</a></li>
+                            <li><a href="javascript:;">供应合作</a></li>
+                            <li><a href="javascript:;">服务站加盟</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="down_app">
+                    <dt>
+                        <em class="ico_6"></em><a href="javascript:;">手机移动</a><i></i>
+                    </dt>
+                    <dd>
+                        <div class="qrcode">
+                            <img src="https://www.taokubuy.com/data/upload/shop/common/mb_app.png">
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="weixin">
+                    <dt>
+                        关注我们<i></i>
+                    </dt>
+                    <dd>
+                        <img src="https://www.taokubuy.com/data/upload/shop/common/05930811665233424.png">
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="javascript:">
+                <img src="../img/logo.png" alt="">
+            </a>
+        </div>
+        <!-- 搜索框 -->
+        <div class="search">
+            <ul class="tab">
+                <li class="current">
+                    <span>商品</span>
+                    <i class="arrow"></i>
+                </li>
+                <!-- <li class="current">
+                <span>店铺</span>
+            </li> -->
+            </ul>
+            <form class="search_form" action="#">
+                <input type="text" placeholder="请输入您要搜索的商品关键字" class="input_text">
+                <input type="button" id="button" value="搜索" class="input_submit">
+            </form>
+            <div class="keyword">
+                热门搜索：
+            </div>
+        </div>
+        <!-- 我的商城 -->
+        <div class="head_user">
+            <dl class="my_mall">
+                <dt>
+                    <span class="ico"></span>
+                    我的商城
+                    <i class="arrow"></i>
+                </dt>
+                <dd>
+                    <div class="sub_title"></div>
+                </dd>
+            </dl>
+            <dl class="my_cart">
+                <a href="cart.html">
+                    <dt>
+                        <span class="ico"></span>
+                        购物车结算
+                        <i class="arrow"></i>
+                    </dt>
+                </a>
+                <dd>
+                    <div class="sub_title"></div>
+                </dd>
+            </dl>
+        </div>
+    </header>
+    <nav>
+        <div class="nav">
+            <div class="all_category">
+                <i></i>
+                <h3><a href="javascript:;">所有分类</a></h3>
+            </div>
+            <ul class="site_menu">
+                <li><a href="javascript:;">全球优选</a></li>
+                <li><a href="javascript:;">淘库好店</a></li>
+                <li><a href="javascript:;">淘库国际</a></li>
+                <li><a href="javascript:;">淘库特价</a></li>
+                <li><a href="javascript:;">全球优选</a></li>
+                <li><a href="javascript:;">兴农扶贫</a></li>
+                <li><a href="javascript:;">企业采购</a></li>
+                <li><a href="javascript:;">工厂直供</a></li>
+                <li><a href="javascript:;">我要开店</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nch">
+        <p>
+            <i></i>首页
+            <span></span>
+            淘库团购/食品生鲜 > 酒类 > 红酒 > 莱蔻玫瑰混酿红葡萄酒（红玫瑰） 单支 全国
+        </p>
+    </div>
+    <!-- 主体部分 -->
+    <div class="detail">
+        <!-- 放大镜 -->
+        <div class="goods-picture">
+            <div class="magnifier" id="magnifier1">
+                <div class="magnifier-container">
+                    <div class="images-cover"></div>
+                    <!--当前图片显示容器-->
+                    <div class="move-view"></div>
+                    <!--跟随鼠标移动的盒子-->
+                </div>
+                <div class="magnifier-assembly">
+                    <div class="magnifier-btn">
+                        <span class="magnifier-btn-left">&lt;</span>
+                        <span class="magnifier-btn-right">&gt;</span>
+                    </div>
+                    <!--按钮组-->
+                    <div class="magnifier-line">
+                        <ul class="clearfix animation03">
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/lis1.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/lis3.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/lis4.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="../img/lis11.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--缩略图-->
+                </div>
+                <div class="magnifier-view"></div>
+                <!--经过放大的图片显示容器-->
+            </div>
+        </div>
+        <!-- 商品基本信息 -->
+        <div class="goods-summary">
+            <div class="name">
+                <h1>莱蔻玫瑰混酿红葡萄酒（红玫瑰） 单支 全国</h1>
+            </div>
+            <div class="price">
+                <p>市 场 价 : <strong>￥2388.00</strong></p>
+                <p>商 城 价 : <b>￥999.00</b></p>
+                <p>已 售 出 : 105件</p>
+                <p>商品评分 :
+                    <img src="../img/xingxing.png" alt="">
+                    <img src="../img/xingxing.png" alt="">
+                    <img src="../img/xingxing.png" alt="">
+                    <img src="../img/xingxing.png" alt="">
+                    <img src="../img/xingxing.png" alt="">
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="">共有104条评价</a>
+                </p>
+                <div class="code">
+                    <img src="../img/6656.png" alt="">
+                    <p>扫一扫，直接购买</p>
+                </div>
+            </div>
+            <div class="sale">
+                <p>
+                    促&nbsp;销 :
+                    <span>满即送</span>
+                    单笔订单满
+                    <b>￥888.00</b>
+                    ，送礼品赠品
+                </p>
+            </div>
+            <div class="logistics">
+                <p>配 送 至 :</p>
+                <div class="text">
+                    山西省太原市小店区
+                    <i></i>
+                </div>
+                <strong>有货</strong>
+                <span>免运费</span>
+            </div>
+            <div class="key">
+                <p>规 格 :</p>
+                <div class="one">
+                    <a href="javascript:;">
+                        <img src="../img/lis1.jpg" alt="">
+                        <span>单只</span>
+                    </a>
+                </div>
+                <div class="one to">
+                    <a href="javascript:;">
+                        <img src="../img/list11-1.jpg" alt="">
+                        <span>整箱(六只)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="spec">
+                <p>售卖区域 :</p>
+                <span>全国</span>
+            </div>
+            <div class="buy">
+                <div class="num">1</div>
+                <div class="inp">
+                    <div class="plus">+</div>
+                    <div class="sub">-</div>
+                </div>
+                <div class="add">添加购物车</div>
+                <div class="buy-now">立即购买</div>
+            </div>
+        </div>
+        <!-- 店铺信息 -->
+        <div class="goos-info">
+            <h4>皇家龙船旗舰店</h4>
+            <div class="content">
+                <p>综合评分 : <i></i> 5分 </p>
+                <div class="rate">
+                    <h5>店铺动态评分</h5>
+                    <p>描述相符 5分 <span><b>-</b>持平</span></p>
+                    <p>服务态度 5分 <span><b>-</b>持平</span></p>
+                    <p>发货速度 5分 <span><b>-</b>持平</span></p>
+                </div>
+                <p>联系方式 : <img src="http://wpa.qq.com/pa?p=2:2166151729:52" alt=""><img
+                        src="http://amos.im.alisoft.com/online.aw?v=2&uid=假面之黑骑&site=cntaobao&s=2&charset=UTF-8" alt="">
+                </p>
+                <p>商户保障 : <i></i></p>
+                <p>保证金额 : 10000元(已交纳)</p>
+                <p>公司名称 : 深圳皇家龙船有限公司</p>
+                <p>所在地 : 广东省 深圳市 龙岗区</p>
+                <p>电话 : 13753013227</p>
+            </div>
+            <ul>
+                <li><a href="javascript:;">商家地图</a></li>
+                <li><a href="javascript:;">收藏店铺</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 详情图 -->
+    <div class="goods-layout">
+        <div class="goos-info">
+            <h4>皇家龙船旗舰店</h4>
+            <div class="content">
+                <p>综合评分 : <i></i> 5分 </p>
+                <div class="rate">
+                    <h5>店铺动态评分</h5>
+                    <p>描述相符 5分 <span><b>-</b>持平</span></p>
+                    <p>服务态度 5分 <span><b>-</b>持平</span></p>
+                    <p>发货速度 5分 <span><b>-</b>持平</span></p>
+                </div>
+                <p>联系方式 : <img src="http://wpa.qq.com/pa?p=2:2166151729:52" alt=""><img
+                        src="http://amos.im.alisoft.com/online.aw?v=2&uid=假面之黑骑&site=cntaobao&s=2&charset=UTF-8" alt="">
+                </p>
+                <p>商户保障 : <i></i></p>
+                <p>保证金额 : 10000元(已交纳)</p>
+                <p>公司名称 : 深圳皇家龙船有限公司</p>
+                <p>所在地 : 广东省 深圳市 龙岗区</p>
+                <p>电话 : 13753013227</p>
+            </div>
+            <ul>
+                <li><a href="javascript:;">商家地图</a></li>
+                <li><a href="javascript:;">收藏店铺</a></li>
+            </ul>
+        </div>
+        <div class="goods-main">
+            <ul>
+                <li><a href="javascript:;">商品详情</a></li>
+                <li><a href="javascript:;">商品评价(106)</a></li>
+                <li><a href="javascript:;">购买咨询</a></li>
+            </ul>
+            <div class="intro">
+                <ul>
+                    <li>品牌 : 皇家龙船</li>
+                </ul>
+            </div>
+            <div class="default">
+                <img src="../img/31.jpg" alt="">
+                <img src="../img/32.jpg" alt="">
+                <img src="../img/33.jpg" alt="">
+                <img src="../img/34.jpg" alt="">
+                <img src="../img/35.jpg" alt="">
+                <img src="../img/36.jpg" alt="">
+                <img src="../img/37.jpg" alt="">
+                <img src="../img/38.jpg" alt="">
+                <img src="../img/39.jpg" alt="">
+                <img src="../img/40.jpg" alt="">
+                <img src="../img/41.jpg" alt="">
+                <img src="../img/42.jpg" alt="">
+                <img src="../img/43.jpg" alt="">
+                <img src="../img/44.jpg" alt="">
+                <img src="../img/45.jpg" alt="">
+                <img src="../img/46.jpg" alt="">
+                <img src="../img/47.jpg" alt="">
+                <img src="../img/48.jpg" alt="">
+                <img src="../img/49.jpg" alt="">
+                <img src="../img/50.jpg" alt="">
+                <img src="../img/51.jpg" alt="">
+                <img src="../img/52.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="wrapper">
+            <p class="ind">
+                <a href="javascript:;">首页</a>
+                | <a href="javascript:;">关于我们</a>
+                | <a href="javascript:;">联系我们</a>
+                | <a href="javascript:;">加入我们</a>
+                | <a href="javascript:;">商城公告</a>
+                | <a href="javascript:;">帮助中心</a>
+                | <a href="javascript:;">店主之家</a>
+                | <a href="javascript:;">支付方式</a>
+                | <a href="javascript:;">售后服务</a>
+                | <a href="javascript:;">客服中心</a>
+                | <a href="javascript:;">友情链接</a>
+                | <a href="javascript:;">招商入驻</a>
+                | <a href="javascript:;">我要开店</a>
+                | <a href="javascript:;">供应合作</a>
+                | <a href="javascript:;">服务站加盟</a>
+            </p>
+            <p class="and"> 淘库商城股份有限公司 及／或其关联公司及特许人。 版权所有。
+                <a href="javascript:">| 闽ICP备17020735号 | <img src="../img/110.png" alt="">闽公网安备 35020302028562号</a>
+            </p>
+            <span>
+                <a href="javascript:"><img src="../img/1.png" alt=""></a>
+                <a href="javascript:"><img src="../img/2.png" alt=""></a>
+                <a href="javascript:"><img src="../img/3.png" alt=""></a>
+                <a href="javascript:"><img src="../img/4.png" alt=""></a>
+            </span>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.min.min.js"></script>
+    <script src="../lib/jQueryMagnifier/js/magnifier.js"></script>
+    <script src="../js/details.min.js"></script>
+</body>
+
+</html>

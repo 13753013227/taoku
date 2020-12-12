@@ -24,6 +24,10 @@ input {
   outline: none;
 }
 
+i, em {
+  font-style: normal;
+}
+
 .footer {
   width: 100%;
   height: 200px;
@@ -51,6 +55,11 @@ input {
 }
 
 .footer .wrapper .and {
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .wrapper .and a {
   color: #666;
   font-size: 12px;
 }
@@ -449,6 +458,11 @@ header .head_user .my_cart .arrow {
   width: 240px;
 }
 
+.jfoucs_trigeminybox .jfoucs_trigrminy ul li:hover {
+  box-shadow: #cac8c8 0px 0px 10px 1px;
+  transform: translateY(-5px);
+}
+
 .my_layout {
   overflow: hidden;
   width: 1200px;
@@ -522,6 +536,11 @@ header .head_user .my_cart .arrow {
   color: #C00;
   font-style: normal;
   font-size: 12px;
+}
+
+.my_layout .lift_layout .tabs_panel ul li:hover {
+  box-shadow: #cac8c8 0px 0px 10px 1px;
+  transform: translateY(-5px);
 }
 
 .my_layout .right_sidebar {
@@ -748,6 +767,11 @@ header .head_user .my_cart .arrow {
   margin-top: 10px;
 }
 
+.home_layout .middle_layout .tabs_middle_list ul li:hover {
+  box-shadow: #cac8c8 0px 0px 10px 1px;
+  transform: translateY(-5px);
+}
+
 .home_layout .middle_layout .tabs_middle_list ul .goods_name :hover {
   color: red;
   text-decoration: underline;
@@ -836,6 +860,11 @@ header .head_user .my_cart .arrow {
   color: #C00;
   font-style: normal;
   font-size: 14px;
+}
+
+.home_sale_layout ul li:hover {
+  box-shadow: #cac8c8 0px 0px 10px 1px;
+  transform: translateY(-5px);
 }
 
 .wrapper_mt {

@@ -24,6 +24,10 @@ input {
   outline: none;
 }
 
+i, em {
+  font-style: normal;
+}
+
 .footer {
   width: 100%;
   height: 200px;
@@ -51,6 +55,11 @@ input {
 }
 
 .footer .wrapper .and {
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .wrapper .and a {
   color: #666;
   font-size: 12px;
 }
@@ -343,6 +352,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .con .nc_login_layout .nc_login .tabs_container .nc_login_mode .nc_login_form .handle_div {

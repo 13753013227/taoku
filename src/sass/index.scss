@@ -369,6 +369,11 @@
           float: left;
           width: 240px;
         }
+        li:hover{
+          box-shadow: rgb(202, 200, 200) 0px 0px 10px 1px;
+          transform: translateY(-5px);
+          // border: 2px solid #C81623;
+        }
       }
     }
   }
@@ -450,6 +455,11 @@
                 font-size: 12px;
               }
             }
+          }
+          li:hover{
+            box-shadow: rgb(202, 200, 200) 0px 0px 10px 1px;
+            transform: translateY(-5px);
+            // border: 2px solid #C81623;
           }
         }
       }
@@ -671,6 +681,11 @@
                 margin-top: 10px;
               }
             }
+            li:hover{
+              box-shadow: rgb(202, 200, 200) 0px 0px 10px 1px;
+              transform: translateY(-5px);
+              // border: 2px solid #C81623;
+            }
             .goods_name{
               :hover{
                 color: red;
@@ -762,6 +777,11 @@
             font-size: 14px;
           }
         }
+      }
+      li:hover{
+        box-shadow: rgb(202, 200, 200) 0px 0px 10px 1px;
+        transform: translateY(-5px);
+        // border: 2px solid #C81623;
       }
     }
   }
